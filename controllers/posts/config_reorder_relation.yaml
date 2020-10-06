@@ -1,0 +1,6 @@
+# ===================================
+#  Relation Relation Behavior Config
+# ===================================
+
+galleries:
+    nameFrom: title

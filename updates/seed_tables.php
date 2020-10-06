@@ -150,7 +150,7 @@ class SeedAllTables extends Seeder
          */
 
         $gallery = Gallery::create(['title' => 'Featured']);
-        $gallery->posts()->add(Post::first());
+        $gallery->posts()->add(Post::first(), ['relation_sort_order' => 1]);
 
         /*
          * Test 7: Trees

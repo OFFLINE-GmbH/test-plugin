@@ -20,8 +20,8 @@ status:
 galleries:
     label: Galleries
     view:
-        list: $/october/test/models/gallery/columns.yaml
-        toolbarButtons: create|link|delete|unlink
+        list: $/october/test/models/gallery/columns_sortable.yaml
+        toolbarButtons: create|link|delete|unlink|reorder
         defaultSort:
             column: title
             direction: asc

@@ -20,6 +20,7 @@ class Posts extends Controller
         \Backend\Behaviors\FormController::class,
         \Backend\Behaviors\ListController::class,
         \Backend\Behaviors\RelationController::class,
+        \Backend\Behaviors\ReorderRelationController::class,
     ];
 
     public $formConfig = 'config_post_form.yaml';
@@ -31,6 +32,7 @@ class Posts extends Controller
     ];
 
     public $relationConfig = 'config_relation.yaml';
+    public $reorderRelationConfig = 'config_reorder_relation.yaml';
 
     public $requiredPermissions = ['october.test.access_plugin'];
 

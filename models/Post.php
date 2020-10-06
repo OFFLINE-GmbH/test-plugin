@@ -9,6 +9,7 @@ use October\Test\Models\Tag;
 class Post extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    use \October\Rain\Database\Traits\SortableRelation;
 
     /**
      * @var string The database table used by the model.
@@ -29,6 +30,13 @@ class Post extends Model
      * @var array Jsonable fields
      */
     protected $jsonable = ['tags_array', 'tags_array_id'];
+
+    /**
+     * @var array Sortable relations
+     */
+    public $sortableRelations = [
+        'galleries' => 'relation_sort_order'
+    ];
 
     /**
      * @var array Rules

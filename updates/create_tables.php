@@ -292,6 +292,7 @@ class CreateTables extends Migration
             $table->engine = 'InnoDB';
             $table->unsignedInteger('gallery_id')->index('gallery_id_idx');
             $table->unsignedInteger('entity_id')->index('entity_id_idx');
+            $table->unsignedInteger('relation_sort_order')->nullable();
             $table->string('entity_type')->index('entity_type_idx');
             $table->primary(['gallery_id', 'entity_id', 'entity_type'], 'gallery_entity_pk');
         });
